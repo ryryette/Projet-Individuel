@@ -2,6 +2,10 @@
 /*------------------------------------------------------------------------
     Mes commentaires :                  
     ----------------------------------------------------------------------
+    Par défaut, une image <img> est un élément inline, comme du texte : 
+        → display: block; dit au navigateur : “Cette image n’est pas du texte, c’est un bloc.”
+            → elle n’est plus alignée sur la baseline, donc l’espace en bas disparaît.
+    le <body> a margin: 8px par défaut.
     gap : espace entre les elements
     block : met chaque élément l’un sous l’autre
     inline : ne marche pas bien pour les grands blocs
@@ -67,10 +71,15 @@
   font-style: italic;
 }
 
-/* Acceuil - Style */
+/* Acceuil - Header */
+
+body {
+  margin: 0;
+}
 
 .header-logo img {
     height:48px;
+    display: block;
 }
 
 header {
@@ -78,7 +87,7 @@ header {
     justify-content: space-between;
     align-items: center;
     background-color: #5b8e7d;
-    padding: 0 16px; 
+    padding: 8px 16px; 
 
 }
 
