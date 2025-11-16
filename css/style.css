@@ -77,6 +77,8 @@
 
 body {
   margin: 0;
+  background-color: #edebd7;
+
 }
 
 .header-logo img {
@@ -111,7 +113,6 @@ header {
 /* Acceuil - Hero */
 
 .hero {
-    background-color: #edebd7;
     padding: 32px 40px 0; 
     text-align: center;
 }
@@ -142,4 +143,62 @@ header {
     display: block;
 }
 
-/* Acceuil - Suite */
+/* Acceuil - Intro*/
+
+.intro {
+    padding: 32px 40px 0px; 
+    text-align: left;
+}
+
+.intro-inner{
+    max-width: 800px;
+    margin: 0px auto 0px;
+
+}
+
+.intro h2{
+    font-family:"Hanken Grotesk";
+    font-size: 36px;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 1;
+    color:#211f1b;
+    margin: 0px 16px 32px;
+}
+
+
+.intro p {
+    font-family:"Roboto Serif";
+    font-size: 16px;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 1.5;
+    color:#211f1b;
+    margin: 0px 16px 32px;
+}
+
+.intro img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.intro a {
+    display:block;
+    width:fit-content;
+    margin: 32px auto 32px;
+    padding: 4px 24px 4px;
+    font-family:"Hanken Grotesk";
+    font-size: 16px;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 1.5;
+    color:#bc4b51;
+    text-decoration: none;
+    text-align: center;
+    border:solid 3px #bc4b51;;
+    border-radius: 10px;
+   
+}
+
+

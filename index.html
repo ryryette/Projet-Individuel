@@ -13,12 +13,18 @@
     Boilerplate (le haut du code html)
     Mobile First -> meilleur option quand on veux du responsive.
     "hero" est un therme universel pour la partie en haut d'une page qui présente la page (y'a souvent un h1, image, bouto, etc...)
+    Les éléments de liens et texte, images et médias, les formulaires sont des inline par défaults et donc il ne peuvent PAS être centrée avec margin:auto. IL FAUT les passez en display block. 
+        -> INLINE = éléments qui vivent dans une phrase
+        <a>, <strong>, <span>, <img>, <input>, <label>
+        -> INLINE-BLOCK = dans une phrase mais stylable <button>, <input>, <textarea>, <select>, <video>
+        -> BLOCK = éléments qui structurent la page <div>, <section>, <p>, <header>, <nav>, <footer>
     ----------------------------------------------------------------------
     Raccourcis : 
     ----------------------------------------------------------------------
     Word Wrap : option+Z
     Fermer page : cmd+w
     Faire le boilerplate avec vscode : !+ tab
+    Vefier le display d'un élément : outil Inspecteur (F12) sur style. 
     ----------------------------------------------------------------------
     Sémentiques que j'oublie : 
     ----------------------------------------------------------------------
@@ -54,6 +60,21 @@
                     <img src="images/illustration_bike-desert.jpg" alt="Phothographie d'un ou une biker de dos, pédalant dans le desert ">
             </div>
         </section>
+
+        <section class="intro">
+            <div class="intro-inner">
+                <h2> 
+                    BikepackIMAC, la référence du bikepacking
+                </h2>
+                <p> 
+                    Grâce à nos guides détaillés, découvrez l'essentiel pour vivre une expérience inoubliable à vélo.
+                </p>
+                <img src="images/3_bikes.webp" alt="Montage photo de trois vélos, n'en formant plus qu'un">
+                <a href="velos.html">Guide des vélos</a>
+            </div>
+            
+        </section>
+
     </main>
    
     <footer>
