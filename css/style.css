@@ -77,8 +77,6 @@
 
 body {
   margin: 0;
-  background-color: #edebd7;
-
 }
 
 .header-logo img {
@@ -111,6 +109,11 @@ header {
 }
 
 /* Acceuil - Hero */
+
+main{
+    background-color: #edebd7;
+}
+
 
 .hero {
     padding: 32px 40px 0; 
@@ -186,7 +189,7 @@ header {
 .intro a {
     display:block;
     width:fit-content;
-    margin: 32px auto 32px;
+    margin: 32px auto 0px;
     padding: 4px 24px 4px;
     font-family:"Hanken Grotesk";
     font-size: 16px;
@@ -201,4 +204,6 @@ header {
    
 }
 
-
+footer{
+    background-color: #5b8e7d;
+}
