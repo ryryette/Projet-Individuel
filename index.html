@@ -12,6 +12,7 @@
     NE PAS OUBLIER LES BALISES ALT, merci moi même.
     Boilerplate (le haut du code html)
     Mobile First -> meilleur option quand on veux du responsive.
+    "hero" est un therme universel pour la partie en haut d'une page qui présente la page (y'a souvent un h1, image, bouto, etc...)
     ----------------------------------------------------------------------
     Raccourcis : 
     ----------------------------------------------------------------------
@@ -24,6 +25,8 @@
     <img src="liens" alt="description">
     classe : <div class="nomdeclasse">
     id unique : <div id="nomdeid">
+    Si la page html est dans le même dosser que exemple "images", pas besoin d'un "/" devant images : 
+        -> donc : images/... pas /images/...
     ------------------------------------------------------------------------>
 
 </head>
@@ -39,12 +42,18 @@
             <a href="velos.html">Vélos</a>
             <a href="itineraires.html">Itinéraires</a>
         </nav>
-
-
     </header>
     
     <main>
-
+        <section class="hero">
+            <div class="hero-inner">
+                <h1>
+                    <span>PARTEZ À</span>
+                    <span>L'AVENTURE</span> 
+                </h1>
+                    <img src="images/illustration_bike-desert.jpg" alt="Phothographie d'un ou une biker de dos, pédalant dans le desert ">
+            </div>
+        </section>
     </main>
    
     <footer>

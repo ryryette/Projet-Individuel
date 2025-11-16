@@ -2,28 +2,30 @@
 /*------------------------------------------------------------------------
     Mes commentaires :                  
     ----------------------------------------------------------------------
+    Padding : -> L’espace dans une boîte
+    Margin : -> L’espace entre deux boîtes
     Par défaut, une image <img> est un élément inline, comme du texte : 
-        → display: block; dit au navigateur : “Cette image n’est pas du texte, c’est un bloc.”
-            → elle n’est plus alignée sur la baseline, donc l’espace en bas disparaît.
+        -> display: block; dit au navigateur : “Cette image n’est pas du texte, c’est un bloc.”
+            -> elle n’est plus alignée sur la baseline, donc l’espace en bas disparaît.
     le <body> a margin: 8px par défaut.
     gap : espace entre les elements
     block : met chaque élément l’un sous l’autre
     inline : ne marche pas bien pour les grands blocs
     grid : est plutôt pour des mises en page plus complexes
     flex : transforme le conteneur en ligne par défaut, super responsive
-    justify-content: flex-start → tout collé à gauche
-    justify-content: flex-end → tout collé à droite
-    justify-content: center → tout au centre
-    justify-content: space-around → espaces egal autour 
-    justify-content: space-between → espaces extrémités L R 
+    justify-content: flex-start -> tout collé à gauche
+    justify-content: flex-end -> tout collé à droite
+    justify-content: center -> tout au centre
+    justify-content: space-around -> espaces egal autour 
+    justify-content: space-between -> espaces extrémités L R 
     align-items : center, flex-start, flex-end. 
     Différence entre justify et align :
-        → justify-content = aligne sur l’axe principal
-            → l’axe principal est horizontal  
-            → justify-content = aligne à gauche / centre horiz / droite etc.
-        → align-items = aligne sur l’axe secondaire
-            → l’axe principal est horizontal  
-            → justify-content = aligne en haut / centré verti / en bas
+        -> justify-content = aligne sur l’axe principal
+            -> l’axe principal est horizontal  
+            -> justify-content = aligne à gauche / centre horiz / droite etc.
+        -> align-items = aligne sur l’axe secondaire
+            -> l’axe principal est horizontal  
+            -> justify-content = aligne en haut / centré verti / en bas
     -----------------------------------------------------------------------
     Raccourcis : 
     -----------------------------------------------------------------------
@@ -33,10 +35,10 @@
     Sémentiques que j'oublie : 
     -----------------------------------------------------------------------
     display devant flex etc. : display:flex;
-    padding: 0 1px : 
+    padding: 0 1 0 px : 
         Pour : 
             0 = padding en haut ET en bas
-            16px = padding à gauche ET à droite
+            1px = padding à gauche ET à droite
             padding: [vertical] [horizontal];
     
      -----------------------------------------------------------------------*/
@@ -106,3 +108,38 @@ header {
   line-height: 1.5;
 }
 
+/* Acceuil - Hero */
+
+.hero {
+    background-color: #edebd7;
+    padding: 32px 40px 0; 
+    text-align: center;
+}
+
+.hero-inner{
+    max-width: 800px;
+    margin: 0 auto 0;
+
+}
+
+.hero h1{
+    font-family:"Hanken Grotesk";
+    font-size: 48px;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 1;
+    color:#bc4b51;
+    margin: 0 auto 32px;
+}
+
+.hero h1 span{
+    display:block;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Acceuil - Suite */
