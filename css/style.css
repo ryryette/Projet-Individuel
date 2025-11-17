@@ -294,7 +294,7 @@ footer h3{
 .footer-logo{
     display:flex;
     justify-content:center;
-   align-items: center;
+    align-items: center;
 }
 
 .footer-logo img{
@@ -319,8 +319,8 @@ footer h3{
 }
 
 /*------------Version Mobile--------------*/
-
-@media screen and (max-width: 412px) {
+/*412 par rapport à la consigne mais je met 600 pour que ça englobe plus de smartphone*/
+@media screen and (max-width: 600px) {
     .hero,
     .intro {
     padding-left: 0;
@@ -337,4 +337,18 @@ footer h3{
     width: 100%;
     height: auto;
     display: block;}  
+
+    .footer-links {
+    width: auto;
+    flex: 0 0 35%;}
+
+  .footer-about {
+    width: auto;
+    flex: 0 0 40%;}
+
+  .footer-logo {
+    width: auto;
+    flex: 0 0 25%;           justify-content: center;
+    align-items: center;}
+
 }
