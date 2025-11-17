@@ -102,6 +102,10 @@
   font-weight: 700;
   font-style: italic;
 }
+
+* {
+    box-sizing: border-box;
+}
 /* -----------Zone de Test ------------- */
 /*
 * {
@@ -112,7 +116,7 @@
 
 /* -----------Header------------- */
            /* Acceuil */
-
+           
 body {
   margin: 0;
   background-color: #edebd7;
@@ -257,6 +261,7 @@ footer{
 .footer-inner{
     max-width:800px;
     margin: 0px auto 0px;
+    padding: 0px 16px 0px;  
     display : flex;
     justify-content: space-between;
     align-items:stretch;
