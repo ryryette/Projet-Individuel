@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BikepackIMAC - Guide des itinéraires</title>
+<link rel="stylesheet" href="css/style.css">
+
+<!-----------------------------------------------------------------------
+    Mes commentaires :                  
+    ---------------------------------------------------------------------
+    NE PAS OUBLIER LES BALISES ALT, merci moi même.
+    Boilerplate (le haut du code html)
+    Mobile First -> meilleur option quand on veux du responsive.
+    "hero" est un therme universel pour la partie en haut d'une page qui présente la page (y'a souvent un h1, image, bouto, etc...)
+    Les éléments de liens et texte, images et médias, les formulaires sont des inline par défaults et donc il ne peuvent PAS être centrée avec margin:auto. IL FAUT les passez en display block. 
+        -> INLINE = éléments qui vivent dans une phrase
+        <a>, <strong>, <span>, <img>, <input>, <label>
+        -> INLINE-BLOCK = dans une phrase mais stylable <button>, <input>, <textarea>, <select>, <video>
+        -> BLOCK = éléments qui structurent la page <div>, <section>, <p>, <header>, <nav>, <footer>
+    &quot plutôt que "
+    ----------------------------------------------------------------------
+    Raccourcis : 
+    ----------------------------------------------------------------------
+    Word Wrap : option+Z
+    Fermer page : cmd+w
+    Faire le boilerplate avec vscode : !+ tab
+    Vefier le display d'un élément : outil Inspecteur (F12) sur style. 
+    ----------------------------------------------------------------------
+    Sémentiques que j'oublie : 
+    ----------------------------------------------------------------------
+    <img src="liens" alt="description">
+    classe : <div class="nomdeclasse">
+    id unique : <div id="nomdeid">
+    Si la page html est dans le même dosser que exemple "images", pas besoin d'un "/" devant images : 
+        -> donc : images/... pas /images/...
+    ------------------------------------------------------------------------>
+
+</head>
+
+<body> 
+
+    <header>
+        <div class ="header-logo" > 
+            <img src="images/logo.svg" alt="Logo BikepackIMAC"> 
+        </div>
+        <nav class="header-nav">
+            <a href="index.html">Accueil</a>
+            <a href="velos.html">Vélos</a>
+            <a href="itineraires.html">Itinéraires</a>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="hero-itineraires">
+            <div class="itineraires-inner">
+                <h1>NOS ITINÉRAIRES</h1>
+                <p>
+                Découvrer notre sélection d'itinéraires bikepacking en France, et partez à l'aventure !
+                </p>
+            </div>
+        </section>
+
+    <section class="itineraires">
+        <article class="itineraires-article">
+            <h2>Le canal du Midi</h2>
+            <img src="images/canal-du-midi.jpg" alt="Photographie d'un pont sur le canal Midi">
+            <p>Un itinéraire accessible, principalement plat, idéal pour découvrir la région du Midi à vélo !</p>
+            <ul>
+                <li>• Longueur : 197km</li>
+                <li>• Durée : 2 à 3 jours</li>
+            </ul>
+        </article>
+
+        <article class="itineraires-article">
+            <h2>Paris-Dieppe</h2>
+            <img src="images/dieppe.jpg" alt="Photographie panoramique de la ville de Dieppe">
+            <p>Un itinéraire accessible, principalement plat, idél pour découvrir la région du Midi à vélo !</p>
+            <ul>
+                <li>• Longueur : 394km <li>
+                <li>• Durée : 3 à 5 jours  </li>
+            </ul> 
+        </article>
+
+        <article class="itineraires-article">
+            <h2>La tour du Mont Blanc</h2>
+             <img src="images/mont_blanc.jpg" alt="Photographie du Mont Blanc">
+             <p>Un voyage en haute montagne au coeur des Alpes françaises et italiennes, pour les plus téméraires !</p>
+            <ul>
+                <li>• Longueur : 350km <li>
+                <li>• Durée : 8 à 10 jours  </li>
+            </ul> 
+        </article>
+    </section>   
+
+     </main>
+   
+    <footer class="footer-index">
+        <div class="footer-inner">
+            <div class="footer-links">
+            <h3>Plan du site</h3>
+            <ul>
+                <li> <a href="index.html">Accueil</a></li>
+                <li> <a href="velos.html">Guide des Vélos</a></li>
+                <li> <a href="itineraires.html">Guide des itinéraires</a></li>
+            </ul></div>
+
+            <div class="footer-about">
+            <p> Ce site web est réalisé dans le cadre de <a href ="https://www.esiee.fr/formations/ingenieur/filieres/imac">la formation IMAC de l'ESIEE.</a> Il est à but éducatif uniquement.</p> </div>
+        
+            <div class="footer-logo">
+            <img src="images/logo.svg" alt="Logo BikepackIMAC"></div>
+         </div>
+          <p class="footer-credit"> BikepackIMAC 2025</p>
+    </footer>
+
+
+</body>
+</html>
+

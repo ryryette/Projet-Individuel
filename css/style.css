@@ -108,6 +108,8 @@
   outline: 1px solid red;
 }
 
+/*-----------INDEX.HTML--------------*/
+
 /* -----------Header------------- */
            /* Acceuil */
 
@@ -208,6 +210,7 @@ header {
     font-size: 16px;
     font-weight: 500;
     font-style: normal;
+    text-transform: uppercase;
     line-height: 1.5;
     color:#211f1b;
     margin: 0px 16px 32px;
@@ -318,37 +321,241 @@ footer h3{
     flex: 1;
 }
 
-/*------------Version Mobile--------------*/
-/*412 par rapport à la consigne mais je met 600 pour que ça englobe plus de smartphone*/
+/*-----------VELOS.HTML--------------*/
+
+/* --------------Main-------------- */
+    /* Guide des vélos - Hero */
+
+
+.velos-inner {
+    max-width: 800px;
+    margin: 32px auto 32px;
+
+}
+
+.velos-inner h1 {
+    font-family: "Hanken Grotesk";
+    font-size: 48px;
+    font-weight: 700;
+    font-style: normal;
+    text-transform: uppercase;
+    line-height: 1;
+    color: #211f1b;
+    margin: 0px 16px 32px;
+}
+
+.velos-inner img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0px 0px 16px;
+}
+
+.velos-inner p {
+    font-family: "Roboto Serif";
+    font-size: 16px;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 1.5;
+    color: #211f1b;
+    margin: 32px 16px 32px;
+}
+
+ /* Guide des vélos - Articles */
+
+ .velos-article {
+    max-width: 800px;
+    margin: 32px auto 32px;
+    
+}
+
+.velos-article h2 {
+    font-family: "Hanken Grotesk";
+    font-size: 32px;
+    font-weight: 600;
+    font-style: normal;
+    line-height: 1;
+    color: #211f1b;
+    margin: 32px 16px 32px;
+    padding:32px 0px 0px;
+}
+
+.velos-article p {
+    font-family: "Roboto Serif";
+    font-size: 16px;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 1.5;
+    color: #211f1b;
+    margin: 0px 16px 32px;
+}
+.velos-article img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0px 0px 32px;
+}
+
+.velos-article ul {
+    list-style: none;
+    /*Je fait le choix de désactiver list parce que sinon, 
+    l'espace entre le point et le texte des <li> est trop important et 
+    ne correspond pas a la maquette. Autrement en temps normal pour 
+    un listing avec des points j'aurai tout simplement laisser le point des <li> 
+    et je ne l'aurai pas insérer dans le texte de la balise en html. 
+    Je ne le fait ainsi que pour correspondre au mieux a la maquette.*/
+    font-family: "Roboto Serif";
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    color: #211f1b;
+    margin: 0px 16px 32px;
+    padding-left: 0px;
+}
+
+/*----------ITINERAIRES.HTML-------------*/
+
+/* --------------Main-------------- */
+ /* Guide des itinéraires - Hero */
+
+.itineraires-inner {
+    max-width: 800px;
+    margin: 32px auto 32px;
+
+}
+
+.itineraires-inner h1 {
+    font-family: "Hanken Grotesk";
+    font-size: 48px;
+    font-weight: 700;
+    font-style: normal;
+    text-transform: uppercase;
+    line-height: 1;
+    color: #211f1b;
+    margin: 0px 16px 32px;
+}
+
+.itineraires-inner p {
+    font-family: "Roboto Serif";
+    font-size: 16px;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 1.5;
+    color: #211f1b;
+    margin: 32px 16px 32px;
+}
+
+.itineraires-inner img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0px 0px 16px;
+}
+
+
+ /* Guide des itineraires - Articles */
+
+ .itineraires-article {
+    max-width: 800px;
+    margin: 32px auto 32px;
+    
+}
+
+.itineraires-article h2 {
+    font-family: "Hanken Grotesk";
+    font-size: 32px;
+    font-weight: 600;
+    font-style: normal;
+    line-height: 1;
+    color: #211f1b;
+    margin: 32px 16px 32px;
+    padding:32px 0px 0px;
+}
+
+.itineraires-article img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0px 0px 32px;
+}
+
+.itineraires-article p {
+    font-family: "Roboto Serif";
+    font-size: 16px;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 1.5;
+    color: #211f1b;
+    margin: 0px 16px 32px;
+}
+
+
+.itineraires-article ul {
+    list-style: none; 
+    /*Je le désactive pour la même raison que sur la page
+    velos.html dont j'ai expliciter le choix en commentaire
+    caché un peu plus haut dans le css dans 
+    << .velos-article ul >> */
+    font-family: "Roboto Serif";
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    color: #211f1b;
+    margin: 0px 16px 32px;
+    padding-left: 0px;
+}
+
+
+/*------------VERSION MOBILE--------------*/
 @media screen and (max-width: 600px) {
+/*412 par rapport à la consigne 
+mais je met 600 pour que ça englobe 
++ de smartphones*/
+
+/*------------INDEX.HTML----------*/
+
     .hero,
     .intro {
-    padding-left: 0;
-    padding-right: 0;}
+        padding-left: 0;
+        padding-right: 0;}
 
     .hero-inner,
     .intro-inner {
-    max-width: 100%;
-    padding-left: 0;
-    padding-right: 0;}
+        max-width: 100%;
+        padding-left: 0;
+        padding-right: 0;}
 
     .hero img,
     .intro img {
-    width: 100%;
-    height: auto;
-    display: block;}  
+        width: 100%;
+        height: auto;
+        display: block;}  
 
     .footer-links {
-    width: auto;
-    flex: 0 0 35%;}
+        width: auto;
+        flex: 0 0 35%;}
 
-  .footer-about {
-    width: auto;
-    flex: 0 0 40%;}
+    .footer-about {
+        width: auto;
+        flex: 0 0 40%;}
 
-  .footer-logo {
-    width: auto;
-    flex: 0 0 25%;           justify-content: center;
-    align-items: center;}
+    .footer-logo {
+        width: auto;
+        flex: 0 0 25%;           
+        justify-content: center;
+        align-items: center;}
+
+/*-------VELOS.HTML------*/
+    .hero-velos img,
+    .velos-article img {
+        width: 100%;
+        height: auto;
+        display: block;}
+/*-------ITINERAIRES.HTML------*/
+    .hero-itineraires img,
+    .velos-itineraires img {
+        width: 100%;
+        height: auto;
+        display: block;}
 
 }
