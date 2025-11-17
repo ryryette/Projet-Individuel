@@ -103,10 +103,10 @@
   font-style: italic;
 }
 /* -----------Zone de Test ------------- */
-
+/*
 * {
   outline: 1px solid red;
-}
+}*/
 
 /*-----------INDEX.HTML--------------*/
 
@@ -151,13 +151,13 @@ header {
 
 
 .hero {
-    padding: 32px 40px 0; 
+    padding: 32px 40px 0px; 
     text-align: center;
 }
 
 .hero-inner{
     max-width: 800px;
-    margin: 0 auto 0;
+    margin: 0px auto 0px;
 
 }
 
@@ -166,9 +166,10 @@ header {
     font-size: 48px;
     font-weight: 700;
     font-style: normal;
+    text-transform: uppercase;
     line-height: 1;
     color:#bc4b51;
-    margin: 0 auto 32px;
+    margin: 0px auto 32px;
 }
 
 .hero h1 span{
@@ -210,7 +211,6 @@ header {
     font-size: 16px;
     font-weight: 500;
     font-style: normal;
-    text-transform: uppercase;
     line-height: 1.5;
     color:#211f1b;
     margin: 0px 16px 32px;
@@ -242,7 +242,6 @@ header {
 
 /*------------Footer--------------*/
           /* Bas de page */
-
 footer{
     font-family:"Roboto Serif";
     font-size: 12px;
@@ -283,7 +282,7 @@ footer a {
     font-size: 12px;
     font-weight: 700;
     line-height: 1.5;
-    font-style: normal; 
+    font-style: normal;
 }
 
 footer h3{
