@@ -107,10 +107,10 @@
     box-sizing: border-box;
 }
 /* -----------Zone de Test ------------- */
-/*
+
 * {
   outline: 1px solid red;
-}*/
+}
 
 /*-----------INDEX.HTML--------------*/
 
@@ -516,8 +516,23 @@ footer h3{
 mais je met 600 pour que ça englobe 
 + de smartphones*/
 
-/*------------INDEX.HTML----------*/
+/*------------INDEX.HTML----------*/   
 
+     
+  header {
+    display: flex;
+    align-items: center;
+    gap: 16px;}
+
+  .header-nav {
+    display: flex;
+    flex: 1;                      
+    gap: 0;}
+
+  .header-nav a {
+    display: flex;
+    flex: 1;
+    justify-content: space-evenly;}
     .hero,
     .intro {
         padding-left: 0;
@@ -534,6 +549,16 @@ mais je met 600 pour que ça englobe
         width: 100%;
         height: auto;
         display: block;}  
+
+    .footer-index {
+        padding: 16px 16px;}
+    
+    .footer-inner {
+        max-width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
 
     .footer-links {
         width: auto;
